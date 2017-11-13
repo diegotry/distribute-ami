@@ -9,6 +9,11 @@ Resources:
       Handler: index.handler
       Runtime: nodejs6.10
       Timeout: 20
+      Policies: 
+        Statement:
+          - Effect: Allow
+            Action: ec2:CopyImage
+            Resource: '*'
       Events:
         DistributeAmi:
           Type: Api
