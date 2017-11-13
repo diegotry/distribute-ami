@@ -1,0 +1,16 @@
+{
+    "name": "distribute-ami",
+    "version": "1.0.0",
+    "description": "An example Serverless project that uses the AWS SDK to distribute amis through public regions",
+    "main": "index.js",
+    "dependencies": {
+      "aws-sdk": "^2.94.0",
+      "bluebird": "^3.5.1"
+    },
+    "devDependencies": {},
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Diego Santiviago <diegosantiviago@gmail.com>",
+    "license": "MIT"
+  }

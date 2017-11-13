@@ -1,0 +1,17 @@
+AWSTemplateFormatVersion : '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Serverless application to distribute an ami through all public regions.
+
+Resources:
+  DistributeAmiApi:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: index.handler
+      Runtime: nodejs6.10
+      Timeout: 20
+      Events:
+        DistributeAmi:
+          Type: Api
+          Properties:
+            Path: /ami
+            Method: post
